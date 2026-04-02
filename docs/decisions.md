@@ -5,6 +5,13 @@
 - **Hosting:** VPS på Hostinger (187.124.187.149), Ubuntu 24.04 LTS
 - **Staging:** https://znail.medianova.dk
 - **Produktion:** https://znail.com
-- **Webserver:** Nginx + SSL via Let's Encrypt
-- **Koncept:** Online fil-opbevaring — relancering af originalt znail.com fra ~2000
-- **GitHub repo:** https://github.com/andersblauenfeldt/znail
+- **Stack:** TBD — kræver backend + filstorage
+- **Koncept:** Relancering af originalt znail.com (~2000) — online fil-opbevaring
+
+## Status
+Ikke påbegyndt. Brainstorm og konceptafklaring mangler.
+
+## Næste skridt
+- [ ] Brainstorm: hvad adskiller Znail fra Dropbox/Google Drive i dag?
+- [ ] Afgøre målgruppe og forretningsmodel (gratis/betalt)
+- [ ] Beslutte tech-stack
