@@ -213,7 +213,42 @@ Det er simpelt at bygge, der er en klar differentiator (privacy), og det har en 
 
 ---
 
-## 8. Spørgsmål til afklaring
+## 8. Database og eksisterende brugere
+
+**Adgang:** FTP til 217.116.232.251, user: znail, pass: Znail4Ever2026
+
+**Kodebase:** Original PHP-kode fra 2007-2008 ligger stadig på serveren under `www/znail.com/`
+
+**Database credentials (fra znail.inc.php):**
+- Host: localhost (på Gigahost)
+- User: znail
+- Password: ayttm.rdn
+- DB: znail
+
+**Tabeloversigt:**
+| Tabel | Rækker | Indhold |
+|---|---|---|
+| T_users | 15.082 | Brugere (ingen email-kolonne) |
+| T_extendeduserinfo | 13.145 | Demografisk data |
+| T_user_settings | 15.083 | Email, nyhedsbrev-samtykke |
+| T_znailmarks | 547.027 | Gemte bookmarks |
+| T_znaildisk_log | 790.853 | Filaktivitet |
+| T_login_log | 2.246.367 | Login-historik |
+| T_znailnotes | 936 | Gemte noter |
+| T_znailfriends | 236 | Kontaktbog |
+| T_active_users | 912 | Aktive lige nu |
+
+**Brugerstatus:**
+- Aktive brugere (seneste 2 år): **58**
+- Aktive brugere (seneste 5 år): **97**
+- Brugere med email: **6.433**
+- Tilmeldt nyhedsbrev (GDPR-ok): **987**
+
+**Konklusion:** Znail kører stadig og bruges aktivt. 987 emails klar til relancerings-mail når vi er klar.
+
+---
+
+## 9. Spørgsmål til afklaring
 
 - Har du lyst til at bygge et seriøst produkt med betalende brugere, eller er det mere et hobby-projekt?
 - Er privacy-vinklen vigtig for dig, eller er det mere funktionen der tæller?
