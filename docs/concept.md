@@ -248,7 +248,35 @@ Det er simpelt at bygge, der er en klar differentiator (privacy), og det har en 
 
 ---
 
-## 9. Spørgsmål til afklaring
+## 9. Relaunch-strategi
+
+### Auth
+Brug **Clerk** til brugeradministration — login, signup, 2FA, password reset, social login.
+- Gratis op til 10.000 aktive brugere/md
+- Node.js integration er simpel
+- Moderne UI inkluderet
+- GDPR-compliant
+
+Gamle znail-passwords migreres **ikke** — brugere aktiverer ny konto via email-link.
+
+### Relaunch-mail
+- **6.433 emails** i `T_user_settings` — alle med eksisterende konto-relation
+- GDPR tillader systemmail med **legitim interesse** (ikke markedsføring)
+- Mail-indhold: "Znail er relanceret — dine filer og bookmarks er stadig der. Aktivér din konto her."
+- Forventet response: 10-20% = 640-1.200 reaktiverede brugere fra dag ét
+- **987 nyhedsbrev-brugere** kan desuden modtage løbende opdateringer
+
+### Migrations-plan
+1. Eksportér brugere + emails fra gammel database
+2. Importer til Clerk (username + email)
+3. Flyt 10.550 filer fra Gigahost til VPS
+4. Migrér bookmarks, noter og kontakter til ny database
+5. Send relaunch-mail til 6.433 brugere
+6. Aktiver ny znail.com
+
+---
+
+## 10. Spørgsmål til afklaring
 
 - Har du lyst til at bygge et seriøst produkt med betalende brugere, eller er det mere et hobby-projekt?
 - Er privacy-vinklen vigtig for dig, eller er det mere funktionen der tæller?
