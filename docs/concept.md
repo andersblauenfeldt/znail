@@ -270,6 +270,14 @@ Brug **Clerk** til brugeradministration — login, signup, 2FA, password reset, 
 
 Gamle znail-passwords migreres **ikke** — brugere aktiverer ny konto via email-link.
 
+### Email — BESLUTTET: Brevo
+- **Brevo** (brevo.com) til relaunch-mail og nyhedsbreve
+- Gratis: 300 emails/dag, ubegrænsede kontakter
+- Relaunch-mail til 6.433 brugere: ~22 dage à 300/dag
+- Fordel: langsom udsendelse reducerer spam-risiko
+- GDPR-compliant, EU-baseret
+- Alternativt **Resend** til system-emails fra koden
+
 ### Relaunch-mail
 - **6.433 emails** i `T_user_settings` — alle med eksisterende konto-relation
 - GDPR tillader systemmail med **legitim interesse** (ikke markedsføring)
