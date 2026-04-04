@@ -250,12 +250,14 @@ Det er simpelt at bygge, der er en klar differentiator (privacy), og det har en 
 
 ## 9. Relaunch-strategi
 
-### Auth
+### Auth — BESLUTTET: Clerk
 Brug **Clerk** til brugeradministration — login, signup, 2FA, password reset, social login.
-- Gratis op til 10.000 aktive brugere/md
+- **Gratis op til 50.000 MAU** (Auth0 stopper ved 25.000)
+- Betalt: $20/md + $0.02 per ekstra bruger over 50k
 - Node.js integration er simpel
-- Moderne UI inkluderet
+- Moderne UI inkluderet out-of-the-box
 - GDPR-compliant
+- clerk.com
 
 Gamle znail-passwords migreres **ikke** — brugere aktiverer ny konto via email-link.
 
