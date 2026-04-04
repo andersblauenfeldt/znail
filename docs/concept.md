@@ -254,10 +254,19 @@ Det er simpelt at bygge, der er en klar differentiator (privacy), og det har en 
 Brug **Clerk** til brugeradministration — login, signup, 2FA, password reset, social login.
 - **Gratis op til 50.000 MAU** (Auth0 stopper ved 25.000)
 - Betalt: $20/md + $0.02 per ekstra bruger over 50k
-- Node.js integration er simpel
-- Moderne UI inkluderet out-of-the-box
 - GDPR-compliant
 - clerk.com
+
+**Opsætning (engangs):**
+1. Opret Clerk-konto og app
+2. Byg **custom login UI** i Znails eget design — ingen "Powered by Clerk" synlig
+3. Konfigurér **custom email domain**: `noreply@znail.com`
+   - Tilføj znail.com som afsender i Clerk dashboard
+   - Sæt SPF + DKIM DNS-records hos domæne-udbyder
+4. Aktivér 2FA (valgfrit for brugeren)
+5. Konfigurér password reset-flow med Znail-branding
+
+**Resultat:** Brugeren ser aldrig Clerk — alt ser ud som Znail.
 
 Gamle znail-passwords migreres **ikke** — brugere aktiverer ny konto via email-link.
 
